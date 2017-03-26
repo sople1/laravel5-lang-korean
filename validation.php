@@ -4,12 +4,13 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Validation Language Lines
+    | 유효성 검사 반환 한글화
     |--------------------------------------------------------------------------
     |
-    | The following language lines contain the default error messages used by
-    | the validator class. Some of these rules have multiple versions such
-    | as the size rules. Feel free to tweak each of these messages here.
+    | KEY & VALUE 형식의 배열로 정의합니다.
+    | KEY에는 유효 검사명을 입력하세요.
+    | VALUE는 한글 반환 에러 메시지를 정의해주세요.
+    | 속성 정의는 하단의 attribute 정의에서 한글화 시켜주세요.
     |
     */
 
@@ -74,42 +75,32 @@ return [
     "url"                  => ":attribute 형식은 유효하지 않습니다.",
     "timezone"             => ":attribute은(는) 올바르지 않은 시간대입니다.",
 
-    /*
-    |--------------------------------------------------------------------------
-    | Custom Validation Language Lines
-    |--------------------------------------------------------------------------
-    |
-    | Here you may specify custom validation messages for attributes using the
-    | convention "attribute.rule" to name the lines. This makes it quick to
-    | specify a specific custom language line for a given attribute rule.
-    |
-    */
-
+    
     'custom' => [
-    'attribute-name' => [
-    'rule-name' => 'custom-message',
-    ],
+     'attribute-name' => [
+            'rule-name' => 'custom-message',
+        ],
     ],
 
     /*
     |--------------------------------------------------------------------------
-    | Custom Validation Attributes
+    | 속성 정의
     |--------------------------------------------------------------------------
     |
-    | The following language lines are used to swap attribute place-holders
-    | with something more reader friendly such as E-Mail Address instead
-    | of "email". This simply helps us make messages a little cleaner.
+    | KEY & VALUE 형식의 배열로 정의합니다.
+    | KEY에는 유효 속성명을 입력하세요.
+    | VALUE는 속성의 한글명을 입력해주세요
     |
     */
 
     'attributes' => [
-    "name" => "이름",
-    "email" => "이메일",
-    "password" => "비밀번호",
-    "password_confirmation" => "비밀번호 확인",
-    "title" => "제목",
-    "content" => "내용",
-    "tag" => "태그"
+        "name" => "이름",
+        "email" => "이메일",
+        "password" => "비밀번호",
+        "password_confirmation" => "비밀번호 확인",
+        "title" => "제목",
+        "content" => "내용",
+        "tag" => "태그"
 
     ],
 
